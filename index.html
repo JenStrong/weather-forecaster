@@ -4,19 +4,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Cabin Sketch' rel='stylesheet'>
     <link rel="stylesheet" href="weather.css">
-    <title>Thermostat</title>
+    <title>Weather App</title>
   </head>
   <body>
 
   <section>
-    <h1 class = "display-1">Hello, friend! </h1>
-    <form id="select-city">
-      <input id="current-city" type="text" placeholder="Enter a city"></input>
-      <input type="submit" id="get-city" class ="btn btn-primary btn-lg"></input>
-    <h2 class = "display-4">Current temperature: <span id="current-temperature"></span> degrees </h2>
-    <h2 class = "display-4">Current city: <span id="display-city"></span></h2>
+    <div class="content">
+      <h1 class = "display-1" id="greeting"> Hello, friend! </h1>
+      <form id="select-city">
+        <input id="current-city" type="text" placeholder="Enter a city" autocomplete="off"></input>
+      </form>
+      <div id="weather-display">
+        <h2 class = "display-5">Current temperature: <span id="current-temperature"></span> degrees </h2>
+        <h2 class = "display-5">Current weather: <span id="weather-description"></span></h2>
+        <h2 class = "display-5">Current city: <span id="display-city"></span></h2>
+      </div>
+    </div>
   </section>
-
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src = 'interface.js'></script>
